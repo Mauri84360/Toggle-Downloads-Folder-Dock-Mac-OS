@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.toggledownloadsfolders</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/your path to the script</string>
+    </array>
+    <key>StartOnMount</key>
+    <true/>
+    <key>StopOnUnmount</key>
+    <true/>
+    <key>WatchPaths</key>
+    <array>
+        <string>/Volumes/the UUID of your external drive</string>
+    </array>
+    <key>QueueDirectories</key>
+    <array/>
+    <key>KeepAlive</key>
+    <dict>
+        <key>PathState</key>
+        <dict>
+            <key>/Volumes/the UUID of your external drive</key>
+            <false/>
+        </dict>
+    </dict>
+</dict>
+</plist>
